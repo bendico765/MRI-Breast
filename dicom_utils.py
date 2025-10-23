@@ -85,7 +85,7 @@ def get_temporal_resolutions(path: str) -> tuple:
 		dce5[0]["TemporalResolution"].value if "TemporalResolution" in dce5[0] else None
 	)
     
-def get_patient_intensity_values(multiphase_path: str, roi_path: np.ndarray) -> tuple:
+def get_patient_intensity_values(multiphase_path: str, roi_path: str) -> tuple:
 	"""
 	Given a patient row from a dataframe, returns a tuple of 4 arrays of length 5. 
 	Each array contains 5 elements, one for each dce phase. The 4 arrays contain the
